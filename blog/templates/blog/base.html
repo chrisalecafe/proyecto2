@@ -9,7 +9,15 @@
        </head>
        <body>
        <div class="page-header">
+         <div class="col">
+           <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+           <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+
+         </div>
+         <div class="col">
            <h1><a href="/">Django Chrisalecafe Blog</a></h1>
+         </div>
+
        </div>
        <div class="content container">
            <div class="row">
